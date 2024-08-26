@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title class="titulo">CHALLENGE ALURA</title>
+</head> 
+
+<body>
+    <header>
+    <p class="header">Encripta tu texto</p> <a></a>
+    </header>
+    <main>
+        <section>
+         <textarea class="areaTexto" placeholder="Ingresa tu texto "></textarea>
+         <p class="informacion">Solo minúsculas y sin acentos</p>
+          <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Descifrar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje"></textarea>
+            <button class="copiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+        <footer></footer> 
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    background: #987D9A;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.header {
+    color: #000000;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.mensaje, .areaTexto {
+    border-radius: 24px;
+    color: #c9c9c9;
+    background: #8a85d3;
+    border: none;
+    resize: none;
+    width: 150%;
+    height: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+.mensaje:focus, .areaTexto:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+button {
+    background: #D8DFE8;
+    border: 1px solid #000000;
+    border-radius: 24px;
+    color: #000000;
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+.desencriptar:hover, .copiar:hover, .encriptar:hover {
+    background: #811e1e;
+    color: #ebebeb;
+}
+
+.informacion {
+    color: #000000;
+    font-size: 0.7rem;
+    text-align: start;
+    margin: 3px 0 3px 20px;
+}
+
+@media (max-width: 950px) {
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .areaTexto, .mensaje {
+        height: 200px;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .copiar {
+        margin-top: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion {
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        font-size: 1rem;
+    }
+
+    .areaTexto, .mensaje {
+        height: 180px;
+        padding: 10px;
+    }
+
+    .informacion {
+        font-size: 0.7rem;
+    }
+}
